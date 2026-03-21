@@ -1,4 +1,5 @@
-import SamplePage from './pages/SamplePage';
+import UploadPage from './pages/UploadPage';
+import ResultPage from './pages/ResultPage';
 import type { ReactNode } from 'react';
 
 interface RouteConfig {
@@ -10,9 +11,15 @@ interface RouteConfig {
 
 const routes: RouteConfig[] = [
   {
-    name: 'Sample Page',
+    name: 'Upload',
     path: '/',
-    element: <SamplePage />
+    element: <UploadPage />
+  },
+  {
+    name: 'Result',
+    path: '/result',
+    element: <ResultPage />,
+    visible: false
   }
 ];
 
